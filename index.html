@@ -1,882 +1,1228 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
-<!-- robert/  03:29:43 GMT -->
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta property="og:image" content="#" />
 
-    <link rel="shortcut icon" href="favicon.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-    <title>Dennis Makwakwa - Full Stack Developer</title>
+    <title>Dennis Makwakwa</title>
+    <!--  favicon -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,900" rel="stylesheet">
+    <!-- plugins CSS -->
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i&amp;display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" media="screen">
 </head>
 
-<body>
-    <div class="animsition">
-        <div class="loader">
-            <div class="spinner">
-                <div class="double-bounce1"></div>
-                <div class="double-bounce2"></div>
+<body class="home" data-spy="scroll" data-target="#navbar-nav">
+    <!-- =========== Start of Preloader ============ -->
+    <div class="pre-laoder">
+        <img src="assets/img/diagonal-line-pattern.png" alt="overlay" class="background-image-holder">
+        <div id="lineDrawing">
+            <div class="demo-content align-center">
+                <svg class="svg-sahpe">
+                    <g fill="none" fill-rule="evenodd" stroke="#fbc25e" stroke-width="1" class="lines">
+                        <!-- Replace your svg code with inside of the "path d=" code-->
+                        
+                        <path
+                            d="
+                        M54.2,1.9L102.8,86c1.1,1.8-0.3,4.1-2.4,4.1H75.2c-1,0-1.9-0.5-2.4-1.4L51.8,52.3c-1.1-1.8-3.7-1.8-4.8,0
+                        l-6.2,10.8c-0.5,0.9-0.5,1.9,0,2.8L52.6,86c1.1,1.8-0.3,4.1-2.4,4.1H3.3c-2.1,0-3.4-2.3-2.4-4.1L49.5,1.9C50.5,0,53.2,0,54.2,1.9z
+                        M50.5,41.3l24.9,43.1c0.5,0.9,1.4,1.4,2.4,1.4h15.1c2.1,0,3.4-2.3,2.4-4.1l-41-71.1c-1.1-1.8-3.7-1.8-4.8,0l-41,71.1
+                        c-1.1,1.8,0.3,4.1,2.4,4.1h31.8c2.1,0,3.4-2.3,2.4-4.1l-9.6-16.5c-0.2-0.4-0.2-0.9,0-1.3l12.8-22.5C48.7,40.5,50,40.5,50.5,41.3z"
+                            stroke-dasharray="406.8699035644531" style="stroke-dashoffset: 0px; "></path>
+                    </g>
+                </svg>
             </div>
         </div>
 
-        <div class="click-capture"></div>
+    </div>
+    <!-- =========== End of Preloader ============ -->
 
-        <div class="menu">
-            <span class="close-menu icon-cross2 right-boxed"></span>
-            <ul class="menu-list right-boxed">
-                <li data-menuanchor="page1">
-                    <a href="#page1">Home</a>
-                </li>
-                <li data-menuanchor="page2">
-                    <a href="#page2">About</a>
-                </li>
-                <li data-menuanchor="page3P">
-                    <a href="#page3P">Stack</a>
-                </li>
-                <li data-menuanchor="page3">
-                    <a href="#page3">Resume</a>
-                </li>
-                <li data-menuanchor="page4">
-                    <a href="#page4">Clients</a>
-                </li>
-                <li data-menuanchor="page5">
-                    <a href="#page5">Projects</a>
-                </li>
-                <li data-menuanchor="page6">
-                    <a href="#page6">Testimonials</a>
-                </li>
-                <li data-menuanchor="page7">
-                    <a href="#page7">Contact</a>
-                </li>
-            </ul>
-            <div class="menu-footer right-boxed">
-                <div class="social-list">
-                    <a href="#" class="icon ion-social-twitter"></a>
-                    <a href="#" class="icon ion-social-facebook"></a>
-                    <a href="#" class="icon ion-social-googleplus"></a>
-                    <a href="#" class="icon ion-social-linkedin"></a>
-                    <a href="#" class="icon ion-social-dribbble-outline"></a>
-                </div>
+    <!-- =========== Start of Navigation (main menu) ============ -->
+    <header class="navbar navbar-expand-lg navbar-dark position-fixed">
+        <div class="container">
+            <!-- end navbar-toggler = -->
+            <div class="navbar-inner">
+                <nav class="flex-row d-lg-flex justify-content-lg-end align-items-lg-center">
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#hero" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Home
+                            </a>
 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#story">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">experience</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#!"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html">About Me/Us</a></li>
+                                <li><a class="dropdown-item" href="services.html">Services</a></li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Portfolio</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="portfolio-grid.html">Portfolio Grid</a></li>
+                                        <li><a class="dropdown-item" href="portfolio-masonry.html">Portfolio Masonry</a></li>
+                                        <li><a class="dropdown-item" href="portfolio-masonry-full.html">Portfolio
+                                                Masonry Full</a></li>
+                                        <li><a class="dropdown-item" href="portfolio-masonry-full-unequal.html">Portfolio
+                                                Masonry Unequal</a></li>
+                                        <li><a class="dropdown-item" href="portfolio-details-1.html">Portfolio Details
+                                                1</a></li>
+                                        <li><a class="dropdown-item" href="portfolio-details-2.html">Portfolio Details
+                                                2</a></li>
+                                        <li><a class="dropdown-item" href="portfolio-details-3.html">Portfolio Details
+                                                3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Blog
+                                        Pages</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="blog-full.html">Blog Full</a></li>
+                                        <li><a class="dropdown-item" href="blog-sidebar-right.html">Blog Sidebar Right</a></li>
+                                        <li><a class="dropdown-item" href="blog-sidebar-left.html">Blog Sidebar left</a></li>
+                                        <li><a class="dropdown-item" href="blog-details-full.html">Blog Details Full</a></li>
+                                        <li><a class="dropdown-item" href="blog-details-sidebar-right.html">Blog
+                                                Details Sidebar Right</a></li>
+                                        <li><a class="dropdown-item" href="blog-details-sidebar-left.html">Blog Details
+                                                Sidebar left</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
+                                <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                    <!-- end of nav menu items -->
+                </nav>
             </div>
         </div>
+        <!-- <span class="site-language">
+            <a href="#">ENG</a>
+        </span> -->
+    </header>
+    <!-- =========== End of Navigation (main menu)  ============ -->
 
-        <header class="navbar boxed">
-            <div class="navbar-bg"></div>
-            <a class="brand" href="#">
-                <img class="brand-img" alt="" src="images/logo.png">
-                <div class="brand-info">
-                    <div class="brand-name">Dennis</div>
-                    <div class="brand-text">Makwakwa</div>
-                </div>
-            </a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"
-                aria-expanded="false">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+    <!-- =========== Start of Sidebar Navigation (off canvas) ============ -->
+    <div>
+        <div class="navigations-sidebar">
+            <span class="logo-holder">
+                <a href="index-2.html" class="brand-logo"><img src="assets/img/brand-logo.png" alt="brand-logo"></a>
+            </span>
+
+            <!-- Offcanvas Nav Toggoler -->
+            <!-- <button class="offcanvas-toggler action action--open" aria-label="Open Menu">
+                <span class="offcanvas-toggler-icon"></span>
+            </button> -->
+
+            <!-- Main Nav Toggoler *It's here because it helps to make the responsive nav easier* -->
+            <button class="navbar-toggler" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="contacts d-none d-md-block">
-                <div class="contact-item">
-                    +265 995908058
-                </div>
-                <div class="contact-item spacer">
-                    /
-                </div>
-                <div class="contact-item">
-                    <a href="mailto:dennismaqua@gmail.com"><span class="__cf_email__"
-                            data-cfemail="d0b3bfbea4b1b3a490a2bfb2b5a2a4feb3bfbd">send email[protected]</span></a>
-                </div>
+            <!-- end of main nav toggler -->
+
+
+            <div class="navigations-connect">
+                <ul>
+                    <li><a target="_blank" href="https://github.com/drdee23"><i class="ft ft-github"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/denniszmakwakwa/"><i class="ft ft-linkedin"></i></a></li>
+
+                    <li><a target="_blank" href="https://x.com/denniszmakwakwa"><i class="ft ft-x"></i></a></li>
+
+                    <!-- <li><a href="#"><i class="ft ft-instagram"></i></a></li> -->
+                </ul>
             </div>
-        </header>
-        <div class="copy-bottom white boxed">© Dennis <span id='date-time'></span>.</p>
         </div>
-        <script>
-            var dt = new Date().getFullYear();
-            document.getElementById('date-time').innerHTML = dt;
- 
-        </script>
-        <div class="social-list social-list-bottom boxed">
-            <a href="#" class="icon ion-social-twitter"></a>
-            <a href="#" class="icon ion-social-facebook"></a>
-            <a href="#" class="icon ion-social-googleplus"></a>
-            <a href="#" class="icon ion-social-linkedin"></a>
-            <a href="#" class="icon ion-social-dribbble-outline"></a>
-        </div>
-        <div class="pagepiling">
-            <div data-anchor="page1" class="pp-scrollable text-white section section-1">
-                <div class="scroll-wrap">
-                    <div class="section-bg" style="background-image:url(images/bg/main.jpg);"></div>
-                    <div class="scrollable-content">
-                        <div class="vertical-centred">
-                            <div class="boxed boxed-inner">
-                                <div class="vertical-title d-none d-lg-block"><span>Welcome</span></div>
-                                <div class="boxed">
-                                    <div class="container">
-                                        <div class="intro">
-                                            <div class="row">
-                                                <div class="col-md-8 col-lg-6">
-                                                    <p class="subtitle-top">Welcome.<br>Get to know Me</p>
-                                                    <h1 class="display-2 text-white"><span
-                                                            class="text-primary">Hello</span> I am<br> Dennis.</h1>
-                                                            <a target="_blank" href="https://drive.google.com/file/d/1Xsvfx0xbQIN8Jis9rD49W1NsbAbA6zhu/view?usp=share_link"
-                                                        > View PDF format</a>
-                                                  
+        <!-- end of navigations sidebar -->
 
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="offcanvas-menu">
+            <div class="overlay">
+                <img class="background-image-holder" src="assets/img/overlay.png" alt="overlay">
             </div>
-            <div data-anchor="page2" class="pp-scrollable section section-2">
-                <div class="scroll-wrap">
-                    <div class="scrollable-content">
-                        <div class="vertical-centred">
-                            <div class="boxed boxed-inner">
-                                <div class="vertical-title text-white  d-none d-lg-block"><span>what I do</span></div>
-                                <div class="boxed">
-                                    <div class="container">
-                                        <div class="intro">
-                                            <div class="row align-items-center">
-                                                <div class="col-xl-7">
-                                                    <div class="experience-box pb-5">
-                                                        <div class="experience-content">
-                                                            <div class="experience-number text-texture">7</div><br
-                                                                class="d-block d-sm-none">
-                                                            <div class="experience-info">Years<br>Experience<br>Working
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-5">
-                                                    <h2 class="title-uppercase"> <span class="text-primary">
-                                                            Full Stack </span> Software Engineer</h2><a href="#page5">
-                                                        <span class="text-primary">
-                                                            Specialized</span> </a>
-                                                    in BACKEND, FRONTEND, and DATABASE Engineering
-                                                    <div class="progress-bars">
-                                                        <div class="clearfix">
-                                                            <div class="number float-left">Front-End</div>
-                                                            <div class="number float-right">95%</div>
-                                                        </div>
-                                                        <div class="progress">
-                                                            <div class="progress-bar" role="progressbar"
-                                                                style="width: 95%" aria-valuenow="0" aria-valuemin="0"
-                                                                aria-valuemax="100"></div>
-                                                        </div>
-                                                        <div class="clearfix">
-                                                            <div class="number float-left">Back-End</div>
-                                                            <div class="number float-right">98%</div>
-                                                        </div>
-                                                        <div class="progress">
-                                                            <div class="progress-bar" role="progressbar"
-                                                                style="width: 98%" aria-valuenow="25" aria-valuemin="0"
-                                                                aria-valuemax="100"></div>
-                                                        </div>
-                                                        <div class="clearfix">
-                                                            <div class="number float-left">Database</div>
-                                                            <div class="number float-right">95%</div>
-                                                        </div>
-                                                        <div class="progress">
-                                                            <div class="progress-bar" role="progressbar"
-                                                                style="width: 95%" aria-valuenow="25" aria-valuemin="0"
-                                                                aria-valuemax="100"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <nav id="ml-menu" class="menu">
+                <div class="menu__wrap">
+                    <!-- Mainmenu -->
+                    <ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
+                        <li class="menu__item " role="menuitem"><a class="menu__link menu__link--current"
+                                data-submenu="submenu-1" aria-owns="submenu-1" href="#">Home</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="about.html">About</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="services.html">Services</a>
+                        </li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3"
+                                aria-owns="submenu-3" href="#">Portfolio</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4"
+                                aria-owns="submenu-4" href="#">Blog</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="coming-soon.html">Coming
+                                Soon</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="404.html">404</a></li>
+                    </ul>
+                    <!-- Submenu 1 -->
+                    <ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu"
+                        aria-label="">
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="index-2.html">HOME FULL IMAGE
+                                SLIDER</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="home-2.html">HOME HLAF IMAGE
+                                SLIDER</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="home-3.html">HOME FULL
+                                IMAGE</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="home-4.html">HOME HALF
+                                IMAGE</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="home-5.html">HOME Video</a>
+                        </li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="home-6.html">HOME HALF IMAGE
+                                PARTICLE</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="home-7.html">HOME HALF IMAGE
+                                SLIDER PARTICLE</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="home-8.html">HOME Full IMAGE
+                                PARTICLE</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="home-9.html">HOME Full IMAGE
+                                SLIDER PARTICLE</a></li>
+                    </ul>
+                    <!-- Submenu 3 -->
+                    <ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu"
+                        aria-label="">
+                        <li class="menu__item" role="menuitem"><a class="menu__link"
+                                href="portfolio-grid.html">Portfolio
+                                Grid</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link"
+                                href="portfolio-masonry.html">Portfolio
+                                Masonry</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link"
+                                href="portfolio-masonry-full.html">Portfolio
+                                Masonry Full</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link"
+                                href="portfolio-masonry-full-unequal.html">Portfolio
+                                Masonry Unequal</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link"
+                                href="portfolio-details-1.html">Portfolio
+                                Details-1</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link"
+                                href="portfolio-details-2.html">Portfolio
+                                Details-2</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link"
+                                href="portfolio-details-3.html">Portfolio
+                                Details-3</a></li>
+                    </ul>
+                    <!-- Submenu 4 -->
+                    <ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu"
+                        aria-label="">
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="blog-full.html">Blog Full</a>
+                        </li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="blog-sidebar-right.html">Blog
+                                Sidebar Right</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="blog-sidebar-left.html">Blog
+                                Sidebar Left</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link"
+                                href="blog-details-sidebar-left.html">Blog
+                                Full Sidebar Left</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link" href="blog-details-full.html">Blog
+                                Details Full</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link"
+                                href="blog-details-sidebar-right.html">Blog
+                                Details Sidebar Right</a></li>
+                        <li class="menu__item" role="menuitem"><a class="menu__link"
+                                href="blog-details-sidebar-left.html">Blog
+                                Details Sidebar Left</a></li>
+                    </ul>
                 </div>
-            </div>
-            <!-- stack? -->
-            <div data-anchor="page3P" class="pp-scrollable section section-4">
-                <div class="scroll-wrap">
-                    <div class="scrollable-content">
-                        <div class="vertical-centred">
-                            <div class="boxed boxed-inner">
-                                <div class="vertical-title text-white d-none d-lg-block"><span>STACKS</span></div>
-                                <div class="boxed">
-                                    <div class="container">
-                                        <div class="intro">
-                                            <h2 class="title-uppercase text-white">stacked with</h2>
-                                            <div class="row row-partners">
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/stacks/3.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/stacks/4.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/stacks/1.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/stacks/2.png">
-                                                    </div>
-                                                </div>
-                                              
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/stacks/5.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/stacks/6.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/stacks/7.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/stacks/8.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/stacks/9.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/stacks/10.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/stacks/11.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/stacks/12.png">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /////////////////////////// -->
-            <div data-anchor="page3" class="pp-scrollable text-white section section-3">
-                <div class="scroll-wrap">
-                    <div class="section-bg" style="background-image:url(images/bg/resume.jpg);"></div>
-                    <div class="scrollable-content">
-                        <div class="vertical-centred">
-                            <div class="boxed boxed-inner">
-                                <div class="vertical-title d-none d-lg-block"><span>Resume</span></div>
-                                <div class="boxed">
-                                    <div class="container">
-                                        <div class="intro">
-                                            <div class="row row-resume">
-                                                <div class="col-md-6">
-                                                    <div class="col-resume">
-                                                        <h4 class="title-uppercase">Education</h4>
-                                                        <div class="resume-content">
-                                                            <div class="resume-inner">
-                                                                <div class="resume-row">
-                                                                    <h6 class="resume-type">Bachelors</h6>
-                                                                    <p class="resume-study">Bachelor of (B.Sc.) Business
-                                                                        Information Technology, Malawi University of
-                                                                        Science and Technology (MUST) – Malawi</p>
-                                                                    <p class="resume-date text-primary">Aug 2016 - Sept
-                                                                        2020</p>
-                                                                    <p class="resume-text">Pioneers for this Bachelors
-                                                                        program at Malawi University of Science and
-                                                                        Technology (MUST)</p>
-                                                                </div>
-                                                                <h4 class="title-uppercase">ACHIEVEMENTS AND AWARDS</h4>
-                                                                <div class="resume-row">
-                                                                    <h6 class="resume-type">Achievements and skills</h6>
-                                                                    <p class="resume-study">Language Skills</p>
-                                                                    <p class="resume-date text-primary">English and
-                                                                        Chichewa</p>
-                                                                    <p class="resume-text">
-                                                                    <ul>
-                                                                        <li>1st position in RICE University Umbilical
-                                                                            cord challenge</li>
-                                                                        <li>Gold Medallist in Africa Science Week
-                                                                            Robotics Challenge in 2020</li>
-                                                                        <li>
-                                                                            Most Valuable Player (MVP) in
-                                                                            Vice-Chancellor Trophy 2020</li>
-
-                                                                        <li>Best student in sciences award - Police
-                                                                            Secondary School in 2014.</li> 
-                                                                        <li>Overall best student award – Police
-                                                                            Secondary School in 2014.</li>
-                                                                    </ul>
-
-
-
-                                                                    </p>
-                                                                </div>
-
-                                                                <h4 class="title-uppercase">Experience <span class="resume-date text-warning">
-                                                                    . . .
-                                                                </span></h4>
-                                                                <div class="resume-row">
-                                                                    <h6 class="resume-type">Agile systems</h6>
-                                                                    <p class="resume-study">Full Stack Developer.</p>
-                                                                    <p class="resume-date text-primary">2020-2021</p>
-                                                                    <p class="resume-text"> <span
-                                                                            class="resume-date text-primary">Responsibilities
-                                                                        </span>:
-
-                                                                        | API testing and implementation
-                                                                        | Software and hardware systems support
-                                                                        | web design and development
-                                                                        | User Requirement Identification
-                                                                        | User acceptance test formulation and systems
-                                                                        Evaluation
-                                                                        | System design
-                                                                        | Software development (mobile and web)
-                                                                        | Database design and administration
-                                                                        | Training users on hardware and software
-                                                                        operations
-                                                                        <br />
-                                                                        <span class="resume-date text-warning">
-                                                                            Reference:
-                                                                        </span> Alinafe Mbendera
-                                                                    </p>
-
-                                                                    </p>
-                                                                </div>
-                                                                <div class="resume-row">
-                                                                    <h6 class="resume-type">Malawi University of Science
-                                                                        and Technology -MUST.</h6>
-                                                                    <p class="resume-study">ICT Officer (Intern).</p>
-                                                                    <p class="resume-date text-primary">2017-2019</p>
-                                                                    <p class="resume-text"> <span
-                                                                            class="resume-date text-primary">Responsibilities
-                                                                        </span>:
-
-                                                                        | Assist with help desk calls, scheduling, and
-                                                                        tickets management
-                                                                        | Follow up on user requests and ensure timely
-                                                                        resolution
-                                                                        | Basic end-user support on technical issues
-                                                                        covering Mac/PC hardware, Printers, scanners,
-                                                                        computer peripherals, Mobile devices (iOS,
-                                                                        Android) and network connectivity
-                                                                        | Under IT staff guidance, create accounts and
-                                                                        configure end-user computer systems
-                                                                        | Assist in the maintenance of IT standards and
-                                                                        documentation
-                                                                        | Under the guidance of IT staff, inventory
-                                                                        technology equipment and software.
-                                                                        | Use remote tools for maintenance and support
-                                                                        of ICT systems
-                                                                        | Maintain audio and video equipment in
-                                                                        conference rooms
-                                                                        | Support / maintenance of IP telephony system
-                                                                        | Other duties as may be assigned for exposure
-                                                                        to modern ICT systems
-                                                                        |
-
-                                                                        <br />
-                                                                        <span class="resume-date text-warning">
-                                                                            Reference:
-                                                                        </span> Rodney Maganga
-                                                                    </p>
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="col-resume">
-                                                        <h4 class="title-uppercase">Experience</h4>
-                                                        <div class="resume-content">
-                                                            <div class="resume-inner">
-                                                                <div class="resume-row">
-                                                                    <h6 class="resume-type">Nthanda Foundation.</h6>
-                                                                    <p class="resume-study">Full-stack Developer and
-                                                                        trainer.</p>
-                                                                    <p class="resume-date text-primary">2020
-                                                                    </p>
-                                                                    <p class="resume-text"><span
-                                                                            class="resume-date text-primary">Responsibilities
-                                                                        </span>
-                                                                        : Software development (mobile and web)
-                                                                        | API testing and implementation
-                                                                        | Software and hardware systems support
-                                                                        | web design and development
-                                                                        | User Requirement Identification
-                                                                        | User acceptance test formulation and systems
-                                                                        Evaluation
-                                                                        | System design
-                                                                        | Database design and administration
-                                                                        | Training users on hardware and software
-                                                                        operations
-                                                                        | Teaching technologies to different audiences
-                                                                        | creating Content to teach
-                                                                        <br />
-                                                                        <!-- LINK: <a href="https://digisavvy.org/"><span
-                                                                                class="resume-date text-primary">digisavvy.org
-                                                                            </span></a>  -->
-                                                                        <span class="resume-date text-warning">
-                                                                            Reference:
-                                                                        </span>Panji
-                                                                        Harwa
-                                                                    </p>
-                                                                </div>
-                                                                <div class="resume-row">
-                                                                    <h6 class="resume-type">Lilongwe University of
-                                                                        Agriculture & Natural Resources-LUANAR.</h6>
-                                                                    <p class="resume-study">Senior Software Engineer.
-                                                                    </p>
-                                                                    <p class="resume-date text-primary">2021 - ongoing
-                                                                    </p>
-                                                                    <p class="resume-text">
-                                                                    <p class="resume-text"><span
-                                                                            class="resume-date text-primary">Responsibilities
-                                                                        </span>:
-                                                                        Software development (mobile and web)
-                                                                        | API testing and implementation
-                                                                        | Software and hardware systems support
-                                                                        | web design and development
-                                                                        | User Requirement Identification
-                                                                        | User acceptance test formulation and systems
-                                                                        Evaluation
-                                                                        | System design
-                                                                        | Database design and administration
-                                                                        | Training users on hardware and software
-                                                                        operations
-                                                                        | Juggle multiple projects and priorities
-                                                                        simultaneously in a fast-paced environment
-                                                                        | Liaise with management and clients to identify
-                                                                        and define project requirements, scopes, and
-                                                                        objectives. That align with organizational goals
-                                                                        | Coordinate internal and external resources,
-                                                                        ensuring projects remain within scope, schedule,
-                                                                        and defined budgets
-                                                                        | Install, configure, and maintain computer
-                                                                        hardware.
-                                                                        | Software development (mobile and web)
-                                                                        | API testing and implementation
-                                                                        | Software and hardware systems support
-                                                                        | web design and development
-                                                                        | User Requirement Identification
-                                                                        |
-                                                                        | Recover data.
-                                                                        | Closely always monitor the performance of the
-                                                                        servers.
-                                                                        | Implement operating systems.
-                                                                        | Technical support and guidance.
-                                                                        | Routine system maintenance.
-                                                                        | System backup and security.
-                                                                        | Analyse project progress and, when necessary,
-                                                                        adapt scope, timelines, and costs to achieve
-                                                                        maximum benefit
-                                                                        | Assign roles and tasks to dedicated team
-                                                                        members, based on individual strengths and
-                                                                        abilities
-                                                                        | Build the skill sets of individual team
-                                                                        members and capture overall learnings for the
-                                                                        company
-                                                                        | Achieve organizational goals while upholding
-                                                                        standards and best practices
-                                                                        <!-- LINK: <a href="https://zakudimba.mw/"><span
-                                                                                class="resume-date text-primary">zakudimba.mw
-                                                                            </span></a> -->
-                                                                        <span class="resume-date text-warning">
-                                                                            Reference:
-                                                                        </span>Dr.D.Chiumia
-
-                                                                    </p>
-                                                                </div>
-
-                                                                <div class="resume-row">
-                                                                    <h6 class="resume-type">CM Holdings (Bliss&Honey)
-
-                                                                    </h6>
-                                                                    <p class="resume-study">Full-stack Developer and
-                                                                        network administrator.</p>
-                                                                    <p class="resume-date text-primary">2018 - 2019
-                                                                    </p>
-                                                                    <p class="resume-text"><span
-                                                                            class="resume-date text-primary">Responsibilities
-                                                                        </span>
-                                                                        : Getting User requirement
-                                                                        | System design and development
-                                                                        | System configuration
-                                                                        | Database design and administration
-                                                                        | server administration
-                                                                        | Data entry
-                                                                        | Branding designs
-                                                                        | Diagnoses problems with network equipment and
-                                                                        performs equipment repair or upgrades when
-                                                                        appropriate.
-
-                                                                        | Installs, configures, and maintains multi-user
-                                                                        software to be accessed from file servers.
-
-                                                                        | Administer and maintain end user accounts,
-                                                                        permissions, and access rights.
-
-                                                                        <br />
-                                                                        <!-- LINK: <a href="https://digisavvy.org/"><span
-                                                                                class="resume-date text-primary">digisavvy.org
-                                                                            </span></a>  -->
-                                                                        <span class="resume-date text-warning">
-                                                                            Reference:
-                                                                        </span>Charles Makamo
-                                                                    </p>
-                                                                </div>
-                                                                 
-                                                            </div>
-                                                           
-                                                        </div>
-                                                        
-                                                    </div>
-                                                    
-                                                </div>
-                                                
-                                            </div>
-                                            <br>  <hr color="white"/> <br>  
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-anchor="page4" class="pp-scrollable section section-4">
-                <div class="scroll-wrap">
-                    <div class="scrollable-content">
-                        <div class="vertical-centred">
-                            <div class="boxed boxed-inner">
-                                <div class="vertical-title text-white d-none d-lg-block"><span>Partners</span></div>
-                                <div class="boxed">
-                                    <div class="container">
-                                        <div class="intro">
-                                            <h2 class="title-uppercase text-white">Worked With</h2>
-                                            <div class="row row-partners">
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/partners/3.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/partners/4.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/partners/1.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/partners/2.png">
-                                                    </div>
-                                                </div>
-                                              
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/partners/5.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/partners/6.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/partners/7.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/partners/8.png">
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/partners/9.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/partners/10.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/partners/11.png">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                                                    <div class="partner-inner"><img alt="" src="images/partners/12.png">
-                                                    </div>
-                                                </div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div data-anchor="page5" class="pp-scrollable text-white section section-5">
-                <div class="scroll-wrap">
-                    <div class="bg-changer">
-                        <div class="section-bg" style="background-image:url(images/bg/project1.jpg);"></div>
-                        <div class="section-bg" style="background-image:url(images/bg/project2.jpg);"></div>
-                    </div>
-                    <div class="scrollable-content">
-                        <div class="vertical-centred">
-                            <div class="boxed boxed-inner">
-                                <div class="vertical-title  d-none d-lg-block"><span>my works</span></div>
-                                <div class="boxed">
-                                    <div class="container">
-                                        <div class="intro">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <h2 class="title-uppercase text-white">LATEST PROJECTS</h2>
-                                                    <div class="row-project-box row">
-                                                        <div class="col-project-box col-sm-6 col-md-4 col-lg-4">
-                                                            <a href="digi.html" class="project-box">
-                                                                <div class="project-box-inner">
-                                                                    <h5>Digisavvy<br>Africa</h5>
-                                                                    <div class="project-category">A Digital Learning platform</div>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-project-box col-sm-6 col-md-4 col-lg-4">
-                                                            <a href="schoolms.html" class="project-box">
-                                                                <div class="project-box-inner">
-                                                                    <h5>Schools <br>Management System.</h5>
-                                                                    <div class="project-category">A Management System.</div>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-project-box col-sm-6 col-md-4 col-lg-4">
-                                                            <a href="zakudimba.html" class="project-box">
-                                                                <div class="project-box-inner">
-                                                                    <h5>zakudimba</h5>
-                                                                    <div class="project-category">(WEB & MOBILE-APP) to help famers sell, transport, buy... products and services
-                                                                    </div>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-project-box col-sm-6 col-md-4 col-lg-4">
-                                                            <a href="nycom.html" class="project-box">
-                                                                <div class="project-box-inner">
-                                                                    <h5>NATIONAL YOUTH COUNCIL.</h5>
-                                                                    <div class="project-category">SMS handling portal</div>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-project-box col-sm-6 col-md-4 col-lg-4">
-                                                            <a href="pamw.html" class="project-box">
-                                                                <div class="project-box-inner">
-                                                                    <h5>Pa.mw platform</h5>
-                                                                    <div class="project-category">A website & SE
-                                                                    </div>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="col-project-box col-sm-6 col-md-4 col-lg-4">
-                                                            <a href="magu.html" class="project-box">
-                                                                <div class="project-box-inner">
-                                                                    <h5>Malawi Assemblies of God University Student portal </h5>
-                                                                    <div class="project-category">A Student Management System (web and mobile)</div>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-project-box col-sm-6 col-md-4 col-lg-4">
-                                                            <a href="must.html" class="project-box">
-                                                                <div class="project-box-inner">
-                                                                    <h5>Malawi University of Science and Technology Human Resource MS</h5>
-                                                                    <div class="project-category">A Management System (WEB).</div>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-project-box col-sm-6 col-md-4 col-lg-4">
-                                                            <a  href="https://www.fairdanmark.dk/en/gallery/matapwata-secondary-school/?image_id=696"target="_blank" class="project-box">
-                                                                <div class="project-box-inner">
-                                                                    <h5>Denmark Computer Lab installation program.</h5>
-                                                                    <div class="project-category">networking, software and hardware installation
-                                                                    </div>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-
-                                                        <!-- <div class="col-project-box col-sm-6 col-md-4 col-lg-4">
-                                                            <a  href="https://wltradingltd.com/"target="_blank" class="project-box">
-                                                                <div class="project-box-inner">
-                                                                    <h5>A website for WL trading ltd</h5>
-                                                                    <div class="project-category">Check the website
-                                                                    </div>
-                                                                </div>
-                                                            </a>
-                                                        </div> -->
-                                                    </div>
-                                                    <a href="interior.html" class="h5 link-arrow text-white">Other projects <i
-                                                            class="icon icon-chevron-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-anchor="page6" class="pp-scrollable text-white section section-6">
-                <div class="scroll-wrap">
-                    <div class="section-bg" style="background-image:url(images/bg/reviews.jpg);"></div>
-                    <div class="scrollable-content">
-                        <div class="vertical-centred">
-                            <div class="boxed boxed-inner">
-                                <div class="vertical-title  d-none d-lg-block"><span>testimonials</span></div>
-                                <div class="boxed">
-                                    <div class="container">
-                                        <div class="intro">
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <span class="icon-quote ion-quote"></span>
-                                                    <div class="review-carousel owl-carousel">
-                                                        <div class="review-carousel-item">
-                                                            <div class="text">
-                                                                <p>“ His work draws aline between ordinary and extraordinality</p>
-                                                            </div>
-                                                            <div class="review-author">
-                                                                <div class="author-name">Nafe Mbendera</div>
-                                                                <i>Agile systems- CEO</i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="review-carousel-item">
-                                                            <div class="text">
-                                                                <p>“The future of ICT in malawi and beyond</p>
-                                                            </div>
-                                                            <div class="review-author">
-                                                                <div class="author-name">Address Malata</div>
-                                                                <i>Vice Chanchellor - Malawi University of Science and Technology</i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="review-carousel-item">
-                                                            <div class="text">
-                                                                <p>“ Give him work and you will suprise your self.</p>
-                                                            </div>
-                                                            <div class="review-author">
-                                                                <div class="author-name">Dr D.Chiumia</div>
-                                                                <i>LUANAR - snr Lecture</i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-anchor="page7" class="pp-scrollable section section-7">
-                <div class="scroll-wrap">
-                    <div class="section-bg" style="background-image:url(images/bg/contact.jpg);"></div>
-                    <div class="scrollable-content">
-                        <div class="vertical-centred">
-                            <div class="boxed boxed-inner">
-                                <div class="vertical-title text-white d-none d-lg-block"><span>contact</span></div>
-                                <div class="boxed">
-                                    <div class="container">
-                                        <div class="intro overflow-hidden">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <h2 class="title-uppercase"><span
-                                                            class="text-primary">LILONGWE</span>,MALAWI</h2>
-                                                    <h5 class="text-muted">Area 24, </h5>
-                                                    <section class="contact-address">
-                                                        <h3><a class="mail" href="mailto:dennismaqua@gmail.com">
-                                                                <span class="__cf_email__"
-                                                                    data-cfemail="10737f7e6471736450627f727562643e737f7d">send
-                                                                    email[protected]</span></a>
-                                                        </h3>
-                                                        <h3><span class="phone">+265995908058</span></h3>
-                                                    </section>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="contact-info">
-                                                        <form class="js-form" novalidate="novalidate">
-                                                            <div class="row">
-                                                                <div class="form-group col-sm-6">
-                                                                    <input type="text" name="name" required=""
-                                                                        placeholder="Name*" aria-required="true">
-                                                                </div>
-                                                                <div class="form-group col-sm-6">
-                                                                    <input type="email" required="" name="email"
-                                                                        placeholder="Email*">
-                                                                </div>
-                                                                <div class="form-group col-sm-12">
-                                                                    <input type="text" name="subject"
-                                                                        placeholder="Subject (Optinal)">
-                                                                </div>
-                                                                <div class="form-group col-sm-12">
-                                                                    <textarea name="message" required=""
-                                                                        placeholder="Message*"></textarea>
-                                                                </div>
-                                                                <div class="form-group form-group-message col-sm-12">
-                                                                    <span id="success" class="text-primary">Thank You,
-                                                                        your message is successfully sent!</span>
-                                                                    <span id="error" class="text-primary">Sorry,
-                                                                        something went wrong </span>
-                                                                </div>
-                                                                <div class="col-sm-12"><button type="submit"
-                                                                        class="btn">Contact me</button></div>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </nav>
+            <div class="offcanvas__copyright"> © <span>Arthor</span> 2018, all rights reserved.</div>
         </div>
     </div>
+    <!-- =========== End of Sidebar Navigation ============ -->
 
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/animsition.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.pagepiling.min.js"></script>
+    <!-- =========== Start of main-wrapper ============ -->
+    <div class="main-wrapper">
+        <!-- =========== Start of Hero ============ -->
+        <section class="cover p-0" id="hero" data-scrollax-parent="true">
+            <div class="cover-image" data-scrollax="properties: { 'translateY': '500px'}">
+                <img class="background-image-holder" src="assets/img/hero-img-4.jpg" alt="background">
+            </div>
+            <div class="overlay overlay--pattern">
+                <img class="background-image-holder" src="assets/img/diagonal-line-pattern.png" alt="overlay">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="cover__content">
+                            <div class="content__top"><span></span>Hello<span></span></div>
+                            <h1>I’m <span>Dennis</span> Makwakwa <br>A full-stack developer </h1>
+                            <p> with growing passion for Artificial Intelligence and commitment to driving digital
+                                transformation.</p>
+                            <div>
+                                <a class="btn btn--primary btn--megaEffect" target="_blank"
+                                    href="https://drive.google.com/file/d/18WzlYfJPBPXhnTaDFKjXQQUoiwFvqAXD/view?usp=drive_link">
+                                    Download CV
+                                </a>
+                            </div>
+                        </div>
 
-    <script src="js/scripts.js"></script>
+                    </div>
+                </div>
+            </div>
+            <div class="quick-contact">
+                <span class="quick-contact__text">Contact</span>
+                <a class="quick-contact__link" href="mailto:"><i class="ft ft-mail"></i></a>
+            </div>
+        </section>
+        <!-- =========== End of Hero ============ -->
+
+        <!-- =========== Start of Story ============ -->
+        <section class="story pb-0" id="story" data-scrollax-parent="true">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 text-center text-sm-left">
+                        <div class="story-img-block">
+                            <div class="title-overlay title-overlay--vertical"
+                                data-scrollax="properties: { 'margin-top': '-100%'}">About</div>
+                            <picture class="story__img">
+                                <img width="370" src="assets/img/about-profile.png" alt="image">
+                            </picture>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="story-details">
+                            <span class="story__mini-title">WHO AM I?</span>
+                            <h3>Full Stack Software Engineer<br>& an AI Scientist </h3>
+                            <p>Dennis is an accomplished Full Stack Software Engineer now venturing into the captivating
+                                world of Artificial
+                                Intelligence. With over seven years of experience in the field, Dennis boasts a diverse
+                                skill set. His technical expertise includes proficiency in back-end development, as well
+                                as front-end design (UI/UX) and development. Additionally, he has strong skills in
+                                mobile development, with experience in building cross-platform applications using
+                                frameworks like Flutter. Dennis has extensive knowledge in database
+                                management, covering both SQL and NoSQL databases. Currently, he is delving into IOT,
+                                Machine
+                                Learning, Natural Language Processing (NLP), and AI, while pursuing a Master's degree in
+                                Artificial Intelligence.</p>
+                            <!-- <span class="story__signature">
+                                <img class="" width="50" src="assets/img/signature.png" alt="signature">
+                            </span> -->
+                            <a class="btn btn--primary btn--megaEffect" target="_blank"
+                                href="https://drive.google.com/file/d/18WzlYfJPBPXhnTaDFKjXQQUoiwFvqAXD/view?usp=drive_link">
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== End of Story ============ -->
+
+        <!-- =========== Start of Service ============ -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="card service">
+                            <i class="icon ti-paint-bucket"></i>
+                            <div class="service__body">
+                                <a href="#">
+                                    <h5>Software Development</h5>
+                                </a>
+                                <p>provides on-demand software solutions tailored to business needs, enabling
+                                    flexibility and scalability. cost effective approach with access to advanced
+                                    technologies
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card service">
+                            <i class="icon ti-server"></i>
+                            <div class="service__body">
+                                <a href="#">
+                                    <h5>Data collection/analysis</h5>
+                                </a>
+                                <p>expert in gathering, processing, interpreting data and reporting while providing
+                                    scalable, cost-effective solutions to transform raw data into actionable insights.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card service">
+                            <i class="icon ti-wand"></i>
+                            <div class="service__body">
+                                <a href="#">
+                                    <h5>artificial intelligence </h5>
+                                </a>
+                                <p> offers scalable AI solutions, such as machine learning, natural language processing,
+                                    and computer vision, enabling companies to leverage AI for innovation and
+                                    efficiency.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Service ============ -->
+
+        <!-- =========== Start of Facts ============ -->
+        <section class="facts" data-scrollax-parent="true">
+            <div class="bg-image" data-scrollax="properties: { 'background-position-y': '-100%'}"><img
+                    class="background-image-holder" src="assets/img/facts.jpg" alt="background-image"></div>
+            <div class="overlay">
+                <img class="background-image-holder" src="assets/img/overlay.png" alt="overlay">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="facts-inner background-dark" data-scrollax="properties: { 'translateY': '20%'}">
+                            <div class="section-title">
+                                <span class="title-overlay" data-scrollax="properties: { translateY: '-250px' }">
+                                    Funfact
+                                </span>
+                                <h3 class="section-title__main">Lets See Some <br> Funfacts About Dennis</h3>
+                                <p class="section-title__description">lets see some estimated numbers Over 7 Years
+                                    Expericences as an ICT specialist</p>
+                            </div>
+                            <ul class="facts-items">
+                                <li class="fact">
+                                    <i class="icon ti-user"></i>
+                                    <span class="fact__title">Happy Clients</span>
+                                    <span class="fact__value" data-value="23">00</span>
+                                </li>
+                                <li class="fact">
+                                    <i class="icon ti-blackboard"></i>
+                                    <span class="fact__title">Projects </span>
+                                    <span class="fact__value" data-value="48">00</span>
+                                </li>
+                                <li class="fact">
+                                    <i class="icon ti-heart"></i>
+                                    <span class="fact__title">Voluntary </span>
+                                    <span class="fact__value" data-value="5">00</span>
+                                </li>
+
+                                <li class="fact">
+                                    <i class="icon ti-world"></i>
+                                    <span class="fact__title">Remote</span>
+                                    <span class="fact__value" data-value="7">00</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Facts ============ -->
+
+        <!-- =========== Start of Portfolio ============ -->
+        <section class="portfolio" id="portfolio" data-scrollax-parent="true">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <span class="title-overlay" data-scrollax="properties: { translateY: '-150px' }">
+                                Portfolio
+                            </span>
+                            <h2 class="section-title__main">Featured Work</h2>
+                            <p class="section-title__description">Here are some of on-demand solutions Dennis
+                                implemented for different clients </p>
+                        </div>
+                        <!-- section title end -->
+
+                        <!-- swiper-navigation -->
+                        <div class="swiper-navigation">
+                            <div class="swiper-button-prev">PREV</div>
+                            <div class="swiper-button-next">NEXT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                            <div class="slide-inner-image">
+
+                                <a class="slide-inner__lightbox" data-gall="portfolio-gall"
+                                    href="assets/img/projects/zakudimbaf.png">
+                                    <i class="ft ft-image"></i>
+                                </a>
+                                <!-- lightbox item end-->
+
+                                <img src="assets/img/projects/zakudimba.png" alt="portfolio">
+                            </div>
+                            <!-- main thumbnail end -->
+                            <div class="slide-inner-meta">
+                                <div class="slide-inner__category">
+                                    <span>Bundled Agriculture digital service</span>
+                                    <span>Website</span>
+                                </div>
+                                <a href="https://zakudimba.mw" target="_blank" class="slide-inner__title">Zakudimba web
+                                    app</a>
+                            </div>
+                            <!-- item description end -->
+                        </div>
+                    </div>
+                    <!-- single slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                            <div class="slide-inner-image">
+
+                                <a class="slide-inner__lightbox" data-gall="portfolio-gall"
+                                    href="assets/img/projects/zakudimbamf.png">
+                                    <i class="ft ft-image"></i>
+                                </a>
+                                <!-- lightbox item end-->
+
+                                <img src="assets/img/projects/zakudimbam.png" alt="portfolio">
+                            </div>
+                            <!-- main thumbnail end -->
+                            <div class="slide-inner-meta">
+                                <div class="slide-inner__category">
+                                    <span>Bundled Agriculture digital service</span>
+                                    <span>Agri Tech</span>
+                                </div>
+                                <a href="https://play.google.com/store/apps/details?id=com.luanar.zakudimba&pcampaignid=web_share"
+                                    target="_blank" class="slide-inner__title">Zakudimba mobile app</a>
+                            </div>
+                            <!-- item description end -->
+                        </div>
+                    </div>
+                    <!-- single slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                            <div class="slide-inner-image">
+
+                                <a class="slide-inner__lightbox" data-gall="portfolio-gall"
+                                    href="assets/img/projects/accademic websitesf.png">
+                                    <i class="ft ft-image"></i>
+                                </a>
+                                <!-- lightbox item end-->
+
+                                <img src="assets/img/projects/accademic websites.png" alt="portfolio">
+                            </div>
+                            <!-- main thumbnail end -->
+                            <div class="slide-inner-meta">
+                                <div class="slide-inner__category">
+                                    <span>Accademic website for an economist at the University of Michigan, Professor
+                                        Dean yang </span>
+                                    <span>powered by jekyll and hosted on github</span>
+                                </div>
+                                <a target="_blank" href="https://deanyang-econ.github.io/deanyang/"
+                                    class="slide-inner__title">Prof Dean
+                                    Yang website</a>
+                            </div>
+                            <!-- item description end -->
+                        </div>
+                    </div>
+                    <!-- single slide end -->
+
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                            <div class="slide-inner-image">
+
+                                <a class="slide-inner__lightbox" data-gall="portfolio-gall"
+                                    href="assets/img/projects/sdgf.png">
+                                    <i class="ft ft-image"></i>
+                                </a>
+                                <!-- lightbox item end-->
+
+                                <img src="assets/img/projects/sdg.png" alt="portfolio">
+                            </div>
+                            <!-- main thumbnail end -->
+                            <div class="slide-inner-meta">
+                                <div class="slide-inner__category">
+                                    <span>A full coded flutter application to manage medical institutions</span>
+                                    <span>Open Source contact me if you need it: its free</span>
+                                </div>
+                                <a href="#" class="slide-inner__title">free mobileApp </a>
+                            </div>
+                            <!-- item description end -->
+                        </div>
+                    </div>
+                    <!-- single slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                            <div class="slide-inner-image">
+
+                                <a class="slide-inner__lightbox" data-gall="portfolio-gall"
+                                    href="assets/img/projects/tradehubf.png">
+                                    <i class="ft ft-image"></i>
+                                </a>
+                                <!-- lightbox item end-->
+
+                                <img src="assets/img/projects/tradehub.png" alt="portfolio">
+                            </div>
+                            <!-- main thumbnail end -->
+                            <div class="slide-inner-meta">
+                                <div class="slide-inner__category">
+                                    <span>E- commerce website for Agriculture produce</span>
+                                    <span>Ecommerce</span>
+                                </div>
+                                <a target="_blank" href="https://site.zakudimba.mw/"
+                                    class="slide-inner__title">Tradehub</a>
+                            </div>
+                            <!-- item description end -->
+                        </div>
+                    </div>
+                    <!-- single slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                            <div class="slide-inner-image">
+
+                                <a class="slide-inner__lightbox" data-gall="portfolio-gall"
+                                    href="assets/img/projects/sisf.png">
+                                    <i class="ft ft-image"></i>
+                                </a>
+                                <!-- lightbox item end-->
+
+                                <img src="assets/img/projects/sis.png" alt="portfolio">
+                            </div>
+                            <!-- main thumbnail end -->
+                            <div class="slide-inner-meta">
+                                <div class="slide-inner__category">
+                                    <span>School Management system - contact for Demo</span>
+                                    <span>Edu Tech</span>
+                                </div>
+                                <a href="#" class="slide-inner__title">School management system</a>
+                            </div>
+                            <!-- item description end -->
+                        </div>
+                    </div>
+                    <!-- single slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                            <div class="slide-inner-image">
+
+                                <a class="slide-inner__lightbox" data-gall="portfolio-gall"
+                                    href="assets/img/projects/digf.png">
+                                    <i class="ft ft-image"></i>
+                                </a>
+                                <!-- lightbox item end-->
+
+                                <img src="assets/img/projects/dig.png" alt="portfolio">
+                            </div>
+                            <!-- main thumbnail end -->
+                            <div class="slide-inner-meta">
+                                <div class="slide-inner__category">
+                                    <span>Online learning plartform. providing digital skills to various audiences in
+                                        malawi </span>
+                                    <span>Edu Tech</span>
+                                </div>
+                                <a target="_blank" href="https://digisavvy.org/" class="slide-inner__title">Malawi
+                                    Digital library</a>
+                            </div>
+                            <!-- item description end -->
+                        </div>
+                    </div>
+                    <!-- single slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                            <div class="slide-inner-image">
+
+                                <a class="slide-inner__lightbox" data-gall="portfolio-gall"
+                                    href="assets/img/projects/cezof.png">
+                                    <i class="ft ft-image"></i>
+                                </a>
+                                <!-- lightbox item end-->
+
+                                <img src="assets/img/projects/cezo.png" alt="portfolio">
+                            </div>
+                            <!-- main thumbnail end -->
+                            <div class="slide-inner-meta">
+                                <div class="slide-inner__category">
+                                    <span>Sports Management system</span>
+                                    <span>the system to stream line various sports </span>
+                                </div>
+                                <a href="#" class="slide-inner__title">Malawi Sportfy</a>
+                            </div>
+                            <!-- item description end -->
+                        </div>
+                    </div>
+                    <!-- single slide end -->
+                </div>
+                <!-- Add Scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <!-- slider end -->
+        </section>
+        <!-- =========== End of Portfolio ============ -->
+
+        <!-- =========== Start of Working process ============ -->
+        <section class="background-dark pb-xl-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="process-content">
+                            <h2>Have a Look at <br> Some of the stacks</h2>
+                            <p>Dennis is a versatile professional with a successful track record in various
+                                technologies. A fast learner and passionate about knowledge, he's eager to explore
+                                emerging tech. His adaptability and enthusiasm make him a valuable asset for any
+                                innovative team.</p>
+                            <div class="process-button-group">
+                                <a href="mailto:dennismaqua@gmail.com" class="btn btn--primary btn--megaEffect">
+                                    Suggest a stack
+                                </a>
+                                <!-- <span class="process-play-btn">
+                                    <a href="https://youtu.be/l-epKcOA7RQ" class="process__play" data-autoplay="true"
+                                        data-vbtype="video"><i class="ft ft-play"></i></a>Watch Me
+                                </span> -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-5 col-12 offset-lg-1">
+                        <picture class="">
+                            <img src="assets/img/process.png" alt="process">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Working process ============ -->
+
+        <!-- =========== Start of Working Experience ============ -->
+        <section class="experience switchable" id="experience" data-scrollax-parent="true">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <span class="title-overlay" data-scrollax="properties: { translateY: '150px' }">
+                                Experience
+                            </span>
+                            <h3 class="section-title__main">Work Experience</h3>
+                            <p class="section-title__description">Here is some of Dennis' 7+ years of experience with
+                                recent institutions </p>
+                        </div>
+                        <!-- section title end -->
+                    </div>
+                </div>
+                <!--switchable-row end  -->
+                <div class="row switchable-row">
+                    <div class="col-12 d-lg-flex justify-content-between">
+                        <picture class="experience__img">
+                            <img src="assets/img/experience-1.jpg" alt="experience">
+                        </picture>
+                        <!-- image end -->
+                        <div class="experience-text">
+                            <div class="experience-title">
+                                <a target="_blank" href="https://luanar.ac.mw/" class="experience__cologo"><img
+                                        src="assets/img/company-logo-2.png" alt="company-logo"></a>
+                                <div>
+                                    <h6>Senior software Engineer at LUANAR</h6>
+                                    <p>2021 - Present</p>
+                                </div>
+                            </div>
+                            <!-- experience-title end -->
+
+                            <div class="experience-description card card--md">
+                                <p>Currently, Dennis is contributing his expertise as a senior full-stack software
+                                    engineer and a researcher to multiple
+                                    projects at the Lilongwe University of Agriculture and Natural Resources (LUANAR).
+                                </p>
+                                <ul>
+                                    <li>Sofware Development </li>
+                                    <li>Project Management</li>
+                                    <li>Research</li>
+                                    <li>Innovation</li>
+                                </ul>
+
+                            </div>
+                            <!-- experience-description end -->
+
+                        </div>
+                    </div>
+                    <!-- info end -->
+                </div>
+                <!--switchable-row end  -->
+                <div class="row switchable-row">
+                    <div class="col-12 d-lg-flex justify-content-between">
+                        <picture class="experience__img">
+                            <img src="assets/img/experience-3.jpg" alt="experience">
+                        </picture>
+                        <!-- image end -->
+                        <div class="experience-text">
+                            <div class="experience-title">
+                                <a target="_blank" href="https://kwathu.org/" class="experience__cologo"><img
+                                        src="assets/img/company-logo-1.webp" alt="company-logo"></a>
+                                <div>
+                                    <h6>Full Stack
+                                        Developer & digital
+                                        Trainer at Nthanda Foundation.</h6>
+                                    <p> 2022 - 2023</p>
+                                </div>
+                            </div>
+                            <!-- experience-title end -->
+
+                            <div class="experience-description card card--md">
+                                <p>Dennis has been a software engineer and consultant at Ntha Foundation, overseeing
+                                    the development and maintenance of digital products for Kwathu.org. He also helped
+                                    the
+                                    development of digital curriculum and training of various audiences for the World
+                                    Bank-funded DIGMAP project</p>
+                                <ul>
+                                    <li>Sofware Developement </li>
+                                    <li>Digital Training</li>
+                                    <li>Digital product development, maintaning management </li>
+                                    <li>Infrastructure Management </li>
+                                </ul>
+
+                            </div>
+                            <!-- experience-description end -->
+
+                        </div>
+                    </div>
+                    <!-- info end -->
+                </div>
+                <!--switchable-row end  -->
+
+
+                <div class="row switchable-row">
+                    <div class="col-12 d-lg-flex justify-content-between">
+                        <picture class="experience__img">
+                            <img src="assets/img/experience-2.jpg" alt="experience">
+                        </picture>
+                        <!-- image end -->
+                        <div class="experience-text">
+                            <div class="experience-title">
+                                <a href="https://imagivationtech.com/lander" class="experience__cologo"><img
+                                        src="assets/img/company-logo-3.jpg" alt="company-logo"></a>
+                                <div>
+                                    <h6> full-stack software engineer [Lead] at Imagivation</h6>
+                                    <p>2017 - continuous consultancy</p>
+                                </div>
+                            </div>
+                            <!-- experience-title end -->
+
+                            <div class="experience-description card card--md">
+                                <p>Dennis as a lead software engineer at Imagivation, led a team of local and
+                                    international ICT personnel to develop notable solutions in Malawi, including a
+                                    digital library for the Ministry of Education.</p>
+                                <ul>
+                                    <li>Project management</li>
+                                    <li>Infrastructure Management </li>
+                                    <li>Software Development</li>
+                                    <li>User Training and capacity assessments</li>
+                                </ul>
+
+                            </div>
+                            <!-- experience-description end -->
+
+                        </div>
+                    </div>
+                    <!-- info end -->
+                </div>
+                <!--switchable-row end  -->
+            </div>
+
+        </section>
+        <!-- =========== End of Working Experience ============ -->
+
+        <!-- =========== Start of Skill ============ -->
+        <section class="skills background-dark" data-scrollax-parent="true" id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <span class="title-overlay" data-scrollax="properties: { translateY: '-100px' }">
+                                My Skills
+                            </span>
+                            <h3 class="section-title__main">Expertise Areas</h3>
+                            <p class="section-title__description">Dennis's expertise spans several fields, including but
+                                not limited to</p>
+                        </div>
+                        <!-- section title end -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tab-container">
+                            <ul class="tabs">
+                                <li><button data-animate="progress"><i class="ft ft-image"></i>Software
+                                        Engineering</button>
+                                </li>
+
+                                <li><button data-animate="progress"><i class="ft ft-airplay"></i>Artificial
+                                        Intelligence</button></li>
+
+                                <li><button data-animate="progress"><i class="ft ft-server"></i>Data analysis and
+                                        Research</button>
+                                </li>
+                            </ul>
+                            <!-- skill tab end -->
+                            <div class="tab-content">
+                                <div class="tabs-item tabs-item--active">
+                                    <div class="skill">
+                                        <span class="skill__name">front-end</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:90%;">
+                                                <span class="skill__value">90%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single item end -->
+                                    <div class="skill">
+                                        <span class="skill__name">back-end</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:95%;">
+                                                <span class="skill__value">95%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single item end -->
+                                    <div class="skill">
+                                        <span class="skill__name">Database & Infrastructure Management</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:85%">
+                                                <span class="skill__value">85%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single item end -->
+                                </div>
+                                <!-- single tab end -->
+                                <div class="tabs-item">
+                                    <div class="skill">
+                                        <span class="skill__name">Machine Learning
+                                        </span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:60%">
+                                                <span class="skill__value">60%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single item end -->
+                                    <div class="skill">
+                                        <span class="skill__name">Natural Language Processing (NLP)</span>
+                                        <div class="progress">
+                                            <div class="progress-bar reveal" style="width:50%">
+                                                <span class="skill__value">50%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single item end -->
+                                    <div class="skill">
+                                        <span class="skill__name">Internet of things (IOT)
+                                        </span>
+                                        <div class="progress">
+                                            <div class="progress-bar reveal" style="width:55%">
+                                                <span class="skill__value">55%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single item end -->
+                                </div>
+                                <!-- single tab end -->
+                                <div class="tabs-item">
+                                    <div class="skill">
+                                        <span class="skill__name">Data Collection tools
+                                        </span>
+                                        <div class="progress">
+                                            <div class="progress-bar reveal" style="width:89%">
+                                                <span class="skill__value">89%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single item end -->
+                                    <div class="skill">
+                                        <span class="skill__name">Data analysis</span>
+                                        <div class="progress">
+                                            <div class="progress-bar reveal" style="width:70%">
+                                                <span class="skill__value">70%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single item end -->
+                                    <div class="skill">
+                                        <span class="skill__name">Informative and action oriented Reporting
+                                        </span>
+                                        <div class="progress">
+                                            <div class="progress-bar reveal" style="width:90%">
+                                                <span class="skill__value">90%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single item end -->
+                                </div>
+                                <!-- single tab end -->
+                            </div>
+                            <!-- skill end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Skill ============ -->
+
+        <!-- =========== Start of Testimonial ============ -->
+        <section class="testimonial" data-scrollax-parent="true">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <span class="title-overlay" data-scrollax="properties: { translateY: '-200px' }">
+                                Testimonials
+                            </span>
+                            <h3 class="section-title__main">Testimonials</h3>
+                            <p class="section-title__description">What clients have to say about Dennis</p>
+                        </div>
+                        <!-- section title end -->
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 center">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-content card">
+                                        <blockquote>
+                                            Dennis did superb work on my website. He designed an attractive and
+                                            well-organized academic site for me, with fast turnaround. He was very
+                                            responsive and flexible with the changes I requested. I highly recommend
+                                            Dennis! Will continue to rely on him for such work in the future --Upwork.
+                                        </blockquote>
+                                        <div class="testimonial-info">
+                                            <div class="testimonial-customer">
+                                                <span class="testimonial__avatar"><img
+                                                        src="assets/img/testimonial-2.png" alt="testimonial"></span>
+                                                <div class="testimonial-avatar-info">
+                                                    <h6>Prof Dean Yang</h6>
+                                                    <span>economist at the University of Michigan</span>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-rating">
+                                                <i class="icon ti-star active"></i>
+                                                <i class="icon ti-star active"></i>
+                                                <i class="icon ti-star active"></i>
+                                                <i class="icon ti-star active"></i>
+                                                <i class="icon ti-star active"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single item end -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-content card">
+                                        <blockquote>
+                                            Dennis is one of bright minds I have worked with. He is some one who never
+                                            backdown from challanges and I always rely on him to timely Deriver what
+                                            ever task i throw at him.
+                                        </blockquote>
+                                        <div class="testimonial-info">
+                                            <div class="testimonial-customer">
+                                                <span class="testimonial__avatar"><img
+                                                        src="assets/img/testimonial-1.png" alt="testimonial"></span>
+                                                <div class="testimonial-avatar-info">
+                                                    <h6> Panji Harawa</h6>
+                                                    <span>Imagivation technologies</span>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-rating">
+                                                <i class="icon ti-star active"></i>
+                                                <i class="icon ti-star active"></i>
+                                                <i class="icon ti-star active"></i>
+                                                <i class="icon ti-star active"></i>
+                                                <i class="icon ti-star active"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination swiper-pagination--custom"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- =========== End of Testimonial ============ -->
+
+        <!-- =========== Start of CTA ============ -->
+        <section class="position-relative py-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="cta background-dark">
+                            <div class="cta-inner overlay--pattern">
+                                <img src="assets/img/diagonal-line-pattern.png" alt="overlay"
+                                    class="background-image-holder">
+                                <h6>Have any Project in Mind ? <a target="_blank"
+                                        href="https://wa.me/+265995908058">JUST SAY HELLO</a></h6>
+                                <a href="mailto:dennismaqua@gmail.com" class="btn btn--primary btn--lg btn--megaEffect">
+                                    Hire Me
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End CTA ============ -->
+
+        <!-- =========== Start of Clients ============ -->
+        <section class="space-bottom--sm position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="clients swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/3.png" alt="client">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/4.png" alt="client">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/6.png" alt="client">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/7.png" alt="client">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/8.png" alt="client">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/2.png" alt="client">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/1.png" alt="client">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/5.png" alt="client">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Clients ============ -->
+
+        <!-- =========== Start of Footer ============ -->
+        <footer class="footer background-dark">
+
+            <div class="overlay overlay--pattern">
+                <img src="assets/img/diagonal-line-pattern.png" alt="overlay" class="background-image-holder">
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="footer-about">
+                            <span class="footer-brand-logo"><img src="assets/img/brand-logo-2.png"
+                                    alt="brand-logo"></span>
+                            <p class="footer-about__description">I am <span>Dennis Makwakwa</span>. As a full-stack
+                                developer and AI scientist with over 7 years of experience, I am available to assist you
+                                at any time.</p>
+                            <ul class="contact-info">
+                                <li><i class="ft ft-phone-call"></i>
+                                    <a href="tell:">
+                                        <p>+265 995908058</p>
+                                    </a>
+                                </li>
+                                <li> <i class="ft ft-mail"></i>
+                                    <a href="mailto:">
+                                        <p>dennismaqua@gmail.com</p>
+                                    </a>
+                                </li>
+                                <li> <i class="ft ft-map-pin"></i>
+                                    <p>Lilongwe. Malawi</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- footer about end -->
+
+                    </div>
+                    <div class="col-lg-6 col-12">
+
+                        <div class="footer-newsfeed ">
+                            <h6 class="footer__title">Social Posts</h6>
+                            <div class="scrollbar-outer">
+
+
+                                <ul class="inner-content scrollbar-dynamic">
+                                    <a class="twitter-timeline"
+                                        href="https://twitter.com/denniszmakwakwa?ref_src=twsrc%5Etfw">Tweets by
+                                        Dennis makwakwa</a>
+                                    <script async src="https://platform.twitter.com/widgets.js"
+                                        charset="utf-8"></script>
+                                </ul>
+                            </div>
+
+                            <!-- news feed widget end -->
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-4 col-12">
+                        <div class="footer-newsletter">
+                            <h6 class="footer__title">NEWSLETTER</h6>
+                            <p class="footer-newsletter__description">Thanks for signing up to keep in touch with
+                                Arthor. From now, you'll get regular updates, special offer and many more from Arthor.
+                            </p>
+                            <form action="#">
+                                <div class="footer-newsletter-form">
+                                    <div class="form-group">
+                                        <input type="email" class="" id="email" placeholder="Your Email Address">
+                                    </div>
+                                    <button type="submit" class="btn btn--primary">Send</button>
+                                </div>
+                            </form>
+
+                            <ul class="social-connet">
+                                <li><a href="#"><i class="ft ft-twitter"></i></a></li>
+                                <li><a href="#"><i class="ft ft-linkedin"></i></a></li>
+                                <li><a href="#"><i class="ft ft-instagram"></i></a></li>
+                                <li><a href="#"><i class="ft ft-instagram"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div> -->
+                </div>
+            </div>
+        </footer>
+        <!-- =========== End of Footer ============ -->
+
+
+    </div>
+    <!-- Plugns JS Files -->
+    <script src="assets/js/plugins.min.js"></script>
+    <!-- google map js -->
+    <!-- Replace test API Key "AIzaSyCLFomDOPKqvvITt7tv_hZG0PDlWB2-q0g" with your own one below  -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLFomDOPKqvvITt7tv_hZG0PDlWB2-q0g"></script>
+    <!-- App JS Files -->
+    <script src="assets/js/app.js"></script>
 </body>
 
-<!-- robert/  03:30:37 GMT -->
 
 </html>
