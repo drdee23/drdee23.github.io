@@ -334,6 +334,7 @@
         style="
           position: fixed;
           bottom: 20px;
+          
           right: 8px;
           z-index: 9999;
           background: #0000008f;
@@ -357,16 +358,17 @@
           position: fixed;
           bottom: 80px;
           right: 20px;
-          width: 100%;
-          max-width: 400px;
+          /* left: 16px; */
+          /* width: 100%; */
+          max-width: 370px;
           background: #000000e6;
           z-index: 999;
-          padding: 16px;
+          padding: 10px;
           border-radius: 12px;
           border: 1px solid #15ff99;
           box-shadow: 0 0 10px rgba(21, 255, 153, 0.2);
           color: white;
-          backdrop-filter: blur(6px);
+          backdrop-filter: blur(1px);
         "
       >
         <!-- paste your chat HTML here -->
@@ -381,9 +383,11 @@
         <p style="color: white">
           <code>Step 1: Initialize WebLLM and Download Model</code>
         </p>
-        <div class="download-container">
+        
+        <div class="form-control">
           <select id="model-selection"></select>
           <button id="download">Download</button>
+          <br/>
         </div>
         <p id="download-status" class="hidden"></p>
 
